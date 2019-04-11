@@ -1,9 +1,9 @@
 {
-  "name": "@tronscan/client",
+  "name": "@sonicxscan/client",
   "version": "0.2.12",
-  "description": "Tronscan API Client",
+  "description": "Sonicxcan API Client",
   "main": "src/index.js",
-  "homepage": "https://api.tronscan.org/",
+  "homepage": "https://api.sonicxscan.com/",
   "scripts": {
     "test": "mocha",
     "protoc:install": "cd protocol && ./install-protobuf.sh",
@@ -12,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/tronscan/tronscan-node-client.git"
+    "url": "git://github.com/sonicxscan/sonicxscan-cli.git"
   },
   "keywords": [
-    "tron"
+    "sonicx"
   ],
   "author": "Rovak",
   "license": "GPL-3.0",

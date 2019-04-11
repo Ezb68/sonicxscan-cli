@@ -4,7 +4,7 @@
 </h1>
 
 <h4 align="center">
-  Node Client for the <a href="https://api.tronscan.org">Tronscan.org API</a>
+  Node Client for the <a href="https://api.sonicxscan.com">SonicXscan.com API</a>
 </h4>
 
 <p align="center">
@@ -28,13 +28,13 @@
 Install the package
 
 ```bash
-> npm install @tronscan/client
+> npm install @sonicxscan/client
 ```
 
 Use the HTTP Client
 
 ```javascript
-import {Client} from "@tronscan/client";
+import {Client} from "@sonicxscan/client";
 
 const client = new Client();
 
