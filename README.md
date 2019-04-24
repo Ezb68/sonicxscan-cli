@@ -28,13 +28,13 @@
 Install the package
 
 ```bash
-> npm install sonicxchain/sonicxscan-cli
+> npm install @sonicxchain/sonicxscan-cli
 ```
 
 Use the HTTP Client
 
 ```javascript
-import {Client} from "sonicxchain/sonicxscan-cli";
+import {Client} from "@sonicxchain/sonicxscan-cli";
 
 const client = new Client();
 
