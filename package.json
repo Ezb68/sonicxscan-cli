@@ -1,6 +1,6 @@
 {
   "name": "@sonicxchain/sonicxcscan-cli",
-  "version": "0.2.12",
+  "version": "0.2.13",
   "description": "SonicXscan API Client",
   "main": "src/index.js",
   "homepage": "https://api.sonicxscan.com/",
