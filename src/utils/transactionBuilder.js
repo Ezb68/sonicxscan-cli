@@ -1,5 +1,5 @@
 const decode58Check = require("./crypto").decode58Check;
-const {Block, Transaction, Account} = require("../protocol/core/Tron_pb");
+const {Block, Transaction, Account} = require("../protocol/core/Sonicx_pb");
 const google_protobuf_any_pb = require('google-protobuf/google/protobuf/any_pb.js');
 const encodeString = require("../lib/code").encodeString;
 

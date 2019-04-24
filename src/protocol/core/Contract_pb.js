@@ -11,7 +11,7 @@ var jspb = require('google-protobuf');
 var goog = jspb;
 var global = Function('return this')();
 
-var core_Tron_pb = require('../core/Tron_pb.js');
+var core_Sonicx_pb = require('../core/Sonicx_pb.js');
 goog.exportSymbol('proto.protocol.AccountCreateContract', null, global);
 goog.exportSymbol('proto.protocol.AccountUpdateContract', null, global);
 goog.exportSymbol('proto.protocol.AssetIssueContract', null, global);

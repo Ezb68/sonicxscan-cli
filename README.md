@@ -1,5 +1,5 @@
 <h1 align="center">
-  Tronscan Client
+  SonicXscan Client
   <br>
 </h1>
 
@@ -28,13 +28,13 @@
 Install the package
 
 ```bash
-> npm install @sonicxscan/client
+> npm install sonicxchain/sonicxscan-cli
 ```
 
 Use the HTTP Client
 
 ```javascript
-import {Client} from "@sonicxscan/client";
+import {Client} from "sonicxchain/sonicxscan-cli";
 
 const client = new Client();
 
