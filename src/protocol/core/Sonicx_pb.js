@@ -6503,7 +6503,7 @@ proto.protocol.Inventory.serializeBinaryToWriter = function(message, writer) {
  * @enum {number}
  */
 proto.protocol.Inventory.InventoryType = {
-  TRX: 0,
+  SOX: 0,
   BLOCK: 1
 };
 
@@ -6759,7 +6759,7 @@ proto.protocol.Items.serializeBinaryToWriter = function(message, writer) {
  */
 proto.protocol.Items.ItemType = {
   ERR: 0,
-  TRX: 1,
+  SOX: 1,
   BLOCK: 2,
   BLOCKHEADER: 3
 };

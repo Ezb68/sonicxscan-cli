@@ -2259,7 +2259,7 @@ proto.protocol.AssetIssueContract.toObject = function(includeInstance, msg) {
     totalSupply: jspb.Message.getFieldWithDefault(msg, 4, 0),
     frozenSupplyList: jspb.Message.toObjectList(msg.getFrozenSupplyList(),
     proto.protocol.AssetIssueContract.FrozenSupply.toObject, includeInstance),
-    trxNum: jspb.Message.getFieldWithDefault(msg, 6, 0),
+    soxNum: jspb.Message.getFieldWithDefault(msg, 6, 0),
     num: jspb.Message.getFieldWithDefault(msg, 8, 0),
     startTime: jspb.Message.getFieldWithDefault(msg, 9, 0),
     endTime: jspb.Message.getFieldWithDefault(msg, 10, 0),
@@ -2329,7 +2329,7 @@ proto.protocol.AssetIssueContract.deserializeBinaryFromReader = function(msg, re
       break;
     case 6:
       var value = /** @type {number} */ (reader.readInt32());
-      msg.setTrxNum(value);
+      msg.setSoxNum(value);
       break;
     case 8:
       var value = /** @type {number} */ (reader.readInt32());
@@ -2436,7 +2436,7 @@ proto.protocol.AssetIssueContract.serializeBinaryToWriter = function(message, wr
       proto.protocol.AssetIssueContract.FrozenSupply.serializeBinaryToWriter
     );
   }
-  f = message.getTrxNum();
+  f = message.getSoxNum();
   if (f !== 0) {
     writer.writeInt32(
       6,
@@ -2849,16 +2849,16 @@ proto.protocol.AssetIssueContract.prototype.clearFrozenSupplyList = function() {
 
 
 /**
- * optional int32 trx_num = 6;
+ * optional int32 sox_num = 6;
  * @return {number}
  */
-proto.protocol.AssetIssueContract.prototype.getTrxNum = function() {
+proto.protocol.AssetIssueContract.prototype.getSoxNum = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 6, 0));
 };
 
 
 /** @param {number} value */
-proto.protocol.AssetIssueContract.prototype.setTrxNum = function(value) {
+proto.protocol.AssetIssueContract.prototype.setSoxNum = function(value) {
   jspb.Message.setProto3IntField(this, 6, value);
 };
 
