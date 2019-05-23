@@ -1,6 +1,6 @@
 const ADDRESS_SIZE = 34;
-const ADDRESS_PREFIX = "41";
-const ADDRESS_PREFIX_BYTE = 0x41;
+const ADDRESS_PREFIX = "3f";
+const ADDRESS_PREFIX_BYTE = 0x3f;
 
 module.exports = {
   ADDRESS_SIZE,
