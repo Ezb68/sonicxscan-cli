@@ -463,6 +463,49 @@ class ApiClient {
     }
   }
 
+  async getSrc20Tokens() {
+    let {data} = await xhr.get(`${this.apiUrl}/api/src20/getTokens`);
+    return {
+      src20:data.data
+    }
+  }
+
+  async getSrc20Token(name) {
+    let {data} = await xhr.get(`${this.apiUrl}/api/src20/getTokens/${name}`);
+    console.log("SRC20:", data);
+    return {
+      src20:data.data[0]
+    }
+  }
+
+  async createToken20(options = {}) {
+    let {data} = await xhr.post(`${this.apiUrl}/v1/addSrc20Token`, options);
+
+    return data;
+  }
+
+  async getSrc20Balance(address) {
+    let {data} = await xhr.get(`${this.apiUrl}/api/src20/getBalance?address=${address}`);
+    return {
+      balances:data.data
+    }
+  }
+
+  async getSrc20Transfer(abbr,page) {
+    let {data} = await xhr.get(`${this.apiUrl}/v1/getSrc20Transfer?abbr=${abbr}&page=${page}`);
+    return {
+        transfers: data.data,
+      total: data.total,
+      };
+  }
+
+  async getSrc20Holders(name) {
+    let {data} = await xhr.get(`${this.apiUrl}/api/src20/getHolders/${name}`);
+    return {
+      addresses: data.data,
+      totalAddresses: data.total,
+    };
+  }
 }
 
 module.exports = ApiClient;
