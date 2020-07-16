@@ -150,6 +150,7 @@ function buildAssetIssue(options) {
   contract.setName(encodeString(options.name));
   contract.setAbbr(encodeString(options.shortName));
   contract.setTotalSupply(options.totalSupply);
+  contract.setPrecision(options.precision);
   contract.setNum(options.num);
   contract.setEndTime(Date.parse(options.endTime));
   contract.setStartTime(Date.parse(options.startTime));
