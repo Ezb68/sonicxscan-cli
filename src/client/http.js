@@ -506,6 +506,16 @@ class ApiClient {
       totalAddresses: data.total,
     };
   }
+
+  async addTokenInfo(options = {}) {
+    let {data} = await xhr.post(`${this.apiUrl}/v1/addTokenInfo`, options);
+    return data;
+  }
+
+  async getTokenInfo(abbr) {
+    let {data} = await xhr.get(`${this.apiUrl}/v1/getTokenInfo?abbr=${abbr}`);
+    return data;
+  }
 }
 
 module.exports = ApiClient;
